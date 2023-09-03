@@ -1,0 +1,107 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;800&display=swap");
+
+html,body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  background: linear-gradient(90deg, #1CB5E0 0%, #000851 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+}
+
+#container {
+  width: 366px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#playgrid {
+  width: 366px;
+  height: 366px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+h1 {
+  color: #fcfcfc;
+  align-self: center;
+  font-size: 60px;
+  text-align: center;
+}
+
+span{
+  font-family: "Raleway", sans-serif;
+  font-weight: 600;
+}
+
+.box {
+  width: 120px;
+  height: 120px;
+  background-color: #fcfcfc;
+  border-radius: 10px;
+  margin: 1px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+}
+
+.mark_x::before {
+  content: "X";
+  font-size: 100px;
+  width: 100%;
+  color: #acd83c;
+  font-weight: 800;
+  cursor: no-drop;
+}
+
+.mark_o::before {
+  content: "O";
+  font-size: 100px;
+  width: 100%;
+  color: #f76425;
+  font-weight: 800;
+  cursor: no-drop;
+}
+
+#info.cmark_x{
+  color: #acd83c;
+}
+
+#info.cmark_o{
+  color: #f76425;
+}
+#info.cmark_draw{
+  color: #fcfcfc;
+}
+
+#container #btnreset {
+  margin-top: 20px;
+  justify-items: center;
+}
+
+#btnreset {
+  background-color: bisque;
+  padding: 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  font-size: 30px;
+}
+#btnreset:disabled {
+  cursor: no-drop; 
+}
+
+#info {
+  color: white;
+  text-align: center;
+  font-size: 60px;
+  padding-bottom: 20px;
+}
